@@ -3,13 +3,12 @@ from pytube import YouTube
 from rembg import remove
 import face_recognition
 
-# (YouTube('https://www.youtube.com/watch?v=kl8Pd-k1yxE').streams
-#  .filter(file_extension='mp4')
-#  .order_by('resolution').desc()
-#  .first()
-#  .download(output_path=".", filename="video.mp4"))
-#
-# exit(0)
+(YouTube('https://www.youtube.com/watch?v=kl8Pd-k1yxE').streams
+ .filter(file_extension='mp4')
+ .order_by('resolution').desc()
+ .first()
+ .download(output_path=".", filename="video.mp4"))
+
 
 vidcap = cv2.VideoCapture('video.mp4')
 
